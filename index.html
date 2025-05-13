@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Normal Distribution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Normal Distribution Visualizer </h2>
+
+<div class="container">
+  <div class="form-panel">
+    <label>Mean (μ):
+      <input id="mean" type="number" value="0" step="0.1">
+    </label>
+
+    <label>Std Dev (σ):
+      <input id="std" type="number" value="1" step="0.1">
+    </label>
+
+    <label>x value:
+      <input id="xval" type="number" value="1.5" step="0.1">
+    </label>
+
+    <button onclick="draw()">Compute & Draw</button>
+
+    <div class="output" id="probOut"></div>
+    <div class="output" id="varOut"></div>
+  </div>
+
+  <svg id="chart" width="600" height="300"></svg>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
